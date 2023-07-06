@@ -83,11 +83,13 @@ class SideMenu extends StatelessWidget {
                         children: [
                           Spacer(),
                           IconButton(
-                            onPressed: () {},
+                            onPressed: () {_launchURL('https://www.linkedin.com/in/harshitjain-work/');},
                             icon: SvgPicture.asset("assets/icons/linkedin.svg"),
                           ),
                           IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              _launchURL('https://github.com/harshitjain156');
+                            },
                             icon: SvgPicture.asset("assets/icons/github.svg"),
                           ),
                           IconButton(
@@ -113,6 +115,14 @@ class SideMenu extends StatelessWidget {
       await launch(pdfUrl);
     } else {
       throw 'Could not launch $pdfUrl';
+    }
+  }
+
+  _launchURL(String url) async {
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
     }
   }
 

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/constants.dart';
 import '../../responsive.dart';
 import '../../models/Project.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 
 class ProjectCard extends StatelessWidget {
   const ProjectCard({
@@ -26,7 +28,9 @@ class ProjectCard extends StatelessWidget {
             style: Theme.of(context).textTheme.subtitle2,
           ),
           SizedBox(height: 5,),
-          Text('Skills:  '+project.skills!,style: TextStyle(fontStyle: FontStyle.italic,color: Colors.white70), ),
+          Text('Skills:  '+project.skills!,style: TextStyle(fontStyle: FontStyle.italic,color: Colors.white70),
+            maxLines: Responsive.isMobileLarge(context) ? 1 : 2,
+          ),
           SizedBox(height: 9,),
           Text(
             project.description!,
@@ -36,7 +40,9 @@ class ProjectCard extends StatelessWidget {
           ),
           Spacer(),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              _launchURL(project.link!);
+            },
             child: Text(
               "Github Link >>",
               style: TextStyle(color: primaryColor),
@@ -46,4 +52,14 @@ class ProjectCard extends StatelessWidget {
       ),
     );
   }
+
+  _launchURL(String url) async {
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+
 }
