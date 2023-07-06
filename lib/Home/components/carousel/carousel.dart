@@ -9,8 +9,8 @@ class ResponsiveCarousel extends StatelessWidget {
   Widget build(BuildContext context) {
     return CarouselSlider(
       options: CarouselOptions(
-        aspectRatio: 16 / 7,
-        viewportFraction: 0.8,
+        aspectRatio: 4 / 3,
+        viewportFraction: 1,
         autoPlay: true,
       ),
       items: images.map((image) {
@@ -18,7 +18,7 @@ class ResponsiveCarousel extends StatelessWidget {
           builder: (BuildContext context) {
             return Container(
               width: MediaQuery.of(context).size.width,
-              margin: EdgeInsets.symmetric(horizontal: 5.0),
+              margin: EdgeInsets.symmetric(horizontal:2.0),
               child: Image.network(
                 image,
                 fit: BoxFit.cover,

@@ -29,6 +29,8 @@ class ProjectCard extends StatelessWidget {
           ),
           SizedBox(height: 5,),
           Text('Skills:  '+project.skills!,style: TextStyle(fontStyle: FontStyle.italic,color: Colors.white70),
+            overflow: TextOverflow.ellipsis,
+
             maxLines: Responsive.isMobileLarge(context) ? 1 : 2,
           ),
           SizedBox(height: 9,),
@@ -39,14 +41,38 @@ class ProjectCard extends StatelessWidget {
             style: TextStyle(height: 1.5),
           ),
           Spacer(),
-          TextButton(
-            onPressed: () {
-              _launchURL(project.link!);
-            },
-            child: Text(
-              "Github Link >>",
-              style: TextStyle(color: primaryColor),
-            ),
+
+          Row(
+            children: [
+
+              Expanded(
+                flex: 1,
+                child: TextButton(
+                  onPressed: () {
+                    _launchURL(project.link!);
+                  },
+                  child: Text(
+
+                    "Github >>",
+                    style: TextStyle(color: primaryColor),
+                  ),
+                ),
+              ),
+              Expanded(
+
+                flex: 1,
+                child: TextButton(
+                  onPressed: () {
+                    _launchURL(project.link!);
+                  },
+
+                  child: Text(
+                    "Details >>",
+                    style: TextStyle(color: primaryColor),
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
       ),

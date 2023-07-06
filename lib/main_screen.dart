@@ -57,8 +57,7 @@ class MainScreen extends StatelessWidget {
                       Container(
                         child: ResponsiveCarousel(
                           images: [
-                            'https://static.vecteezy.com/system/resources/previews/006/430/145/original/technology-background-concept-circuit-board-electronic-system-futuristic-hi-tech-light-on-dark-blue-free-vector.jpg',
-                            'https://png.pngtree.com/thumb_back/fh260/background/20201028/pngtree-abstract-technology-background-technical-electric-image_443494.jpg',
+                            'assets/images/carousel1.png',
 
                             // Add more image URLs as needed
                           ],
