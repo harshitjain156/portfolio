@@ -63,11 +63,11 @@ class ProjectCard extends StatelessWidget {
                 flex: 1,
                 child: TextButton(
                   onPressed: () {
-                    _launchURL(project.link!);
+                    _launchURL(project.demo!);
                   },
 
                   child: Text(
-                    "Details >>",
+                    "Demo >>",
                     style: TextStyle(color: primaryColor),
                   ),
                 ),
