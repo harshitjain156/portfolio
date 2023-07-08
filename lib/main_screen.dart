@@ -54,7 +54,6 @@ class MainScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       SizedBox(height: 10,),
-
                       MyProjects(),
 
 
