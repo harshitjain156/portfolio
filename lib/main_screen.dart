@@ -37,7 +37,7 @@ class MainScreen extends StatelessWidget {
       drawer: SideMenu(),
       body: Center(
         child: Container(
-          constraints: BoxConstraints(maxWidth: maxWidth),
+          constraints: BoxConstraints(maxWidth: double.maxFinite),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -48,21 +48,13 @@ class MainScreen extends StatelessWidget {
                 ),
               SizedBox(width: defaultPadding),
               Expanded(
-                flex: 7,
+                flex: 8,
                 child: SingleChildScrollView(
-                  padding: EdgeInsets.fromLTRB(20.0, 0.0, 20.0, 0.0),
+                  padding: EdgeInsets.fromLTRB(00.0, 0.0, 10.0, 0.0),
                   child: Column(
                     children: [
-                      SizedBox(height: 30,),
-                      Container(
-                        child: ResponsiveCarousel(
-                          images: [
-                            'assets/images/carousel1.png',
+                      SizedBox(height: 10,),
 
-                            // Add more image URLs as needed
-                          ],
-                        ),
-                      ),
                       MyProjects(),
 
 
