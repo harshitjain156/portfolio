@@ -10,18 +10,10 @@ List<Project> demo_projects = [
     skills: "flutter, Responsive Design",
     link: 'https://github.com/harshitjain156/portfolio',
     demo: 'https://harshitjain.vercel.app/',
-    description:
-        "On Flutter V2.* web officially supported on a stable branch. Today I share an Admin panel or you can call it dashboard UI build with flutter. Now you can build your app dashboard using flutter. This dashboard contains almost everything that you need like a chart, table, nice small card for showing info.",
-  ),
-  Project(
-    title: "E-Commerce REST API - NodeJs",
-    skills: "Nodejs, Expressjs, MongoDb, Authorization, middleware, MVC",
-    link: 'https://github.com/harshitjain156/node-shop',
-    demo: '',
+    description:"This is a Flutter web app that showcases my skills as a developer. It includes a brief bio, a list of my projects, and a contact form."
 
-    description:
-        "In the first part of our complete e-commerce app, we show you how you can create a nice clean onboarding screen for your e-commerce app that can run both Andriod and iOS devices because it builds with flutter. Then on the second episode, we build a Sign in, Forgot Password screen with a custom error indicator.",
   ),
+
   Project(
     title: "Notes App using Internal Storage - Flutter ",
     skills: "Flutter, Shared Preference Manager",
@@ -31,12 +23,38 @@ List<Project> demo_projects = [
         "We redesign the outlook app also make it responsive so that you can run it everywhere on your phone, tab, or web. In this flutter responsive video, we will show you the real power of flutter. Make mobile, web, and desktop app from a single codebase.",
   ),
   Project(
+    title: "E-Commerce REST API - NodeJs",
+    skills: "Nodejs, Expressjs, MongoDb, Authorization, middleware, MVC",
+    link: 'https://github.com/harshitjain156/node-shop',
+    demo: 'https://github.com/harshitjain156/node-shop',
+
+    description:
+    "In the first part of our complete e-commerce app, we show you how you can create a nice clean onboarding screen for your e-commerce app that can run both Andriod and iOS devices because it builds with flutter. Then on the second episode, we build a Sign in, Forgot Password screen with a custom error indicator.",
+  ),
+  Project(
+    title: "E-commerce App - Java",
+    skills: "Java, XML, REST API, Authentication",
+    link: 'https://github.com/harshitjain156/Apni-Care',
+    demo: 'https://github.com/harshitjain156/Apni-Care',
+    description:
+    "Today we gonna build messing/chat app #ui using #flutter that runs both Android and iOS devices also has a dark and light theme. We create in total 4 screens all of that support both Dark Theme and Light Theme. At first, we design a welcome screen that contains an image with a tag line also has a skip button.",
+  ),
+  Project(
     title: "Chat/Messaging App - Java",
     skills: "Java, XML, Firebase, Authentication",
     link: 'https://github.com/harshitjain156/ChatApp',
     demo: 'https://youtube.com/shorts/WP82lLiXUA8?feature=share',
     description:
         "Today we gonna build messing/chat app #ui using #flutter that runs both Android and iOS devices also has a dark and light theme. We create in total 4 screens all of that support both Dark Theme and Light Theme. At first, we design a welcome screen that contains an image with a tag line also has a skip button.",
+  ),
+  Project(
+    title: "MVVM Architechture - JAVA",
+    skills: "Java, XML, MVVM",
+    link: 'https://github.com/harshitjain156/Assigment-App-MVVM',
+    demo: 'https://youtube.com/shorts/b6CDSc9SGTY?feature=share',
+
+    description:
+    "We redesign the outlook app also make it responsive so that you can run it everywhere on your phone, tab, or web. In this flutter responsive video, we will show you the real power of flutter. Make mobile, web, and desktop app from a single codebase.",
   ),
   Project(
     title: "QR Scanner App - JAVA",
@@ -55,20 +73,14 @@ List<Project> demo_projects = [
     description:
         "We redesign the outlook app also make it responsive so that you can run it everywhere on your phone, tab, or web. In this flutter responsive video, we will show you the real power of flutter. Make mobile, web, and desktop app from a single codebase.",
   ),
-  Project(
-    title: "MVVM Architechture - JAVA",
-    skills: "Java, XML, MVVM",
-    link: 'https://github.com/harshitjain156/Assigment-App-MVVM',
-    demo: 'https://youtube.com/shorts/b6CDSc9SGTY?feature=share',
 
-    description:
-    "We redesign the outlook app also make it responsive so that you can run it everywhere on your phone, tab, or web. In this flutter responsive video, we will show you the real power of flutter. Make mobile, web, and desktop app from a single codebase.",
-  ),
   Project(
     title: "Ui Designing and Authentication - JAVA and Firebase",
     skills: "Java, XML, Authentication, Firebase",
     link: 'https://github.com/harshitjain156/',
     demo: 'https://youtube.com/shorts/6Vu5NkEfu0k?feature=share',
+    description:
+    "We redesign the outlook app also make it responsive so that you can run it everywhere on your phone, tab, or web. In this flutter responsive video, we will show you the real power of flutter. Make mobile, web, and desktop app from a single codebase.",
 
   ),
 ];
