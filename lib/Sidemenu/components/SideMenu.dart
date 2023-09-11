@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -34,7 +36,7 @@ class SideMenu extends StatelessWidget {
 
                     TextButton(
                       onPressed: () {
-
+                        window.open("https://drive.google.com/file/d/1lqAKGjIZRojmS0t_K3RLqhscBunLTs-9/view?usp=drive_link","myCv");
                       },
                       child: FittedBox(
                         child: Row(
